@@ -158,6 +158,9 @@ footer {
   width: 100%;
 }
 
+.greeting {
+  text-align: center;
+}
 
 /*para hacer que la barra de navegación sea adaptable, utilizando una media query*/
 
