@@ -1,4 +1,6 @@
-function showAlert () { alert('¡hola, esta es una alerta desde JavaScript!?'); }
+
+function showAlert () { alert('¡hola, esta es una alerta desde JavaScript!?'); 
+}
 
 const form = document.getElementById('myForm');
 
@@ -7,7 +9,6 @@ if (form) {
     event.preventDefault();
     validateForm();
   });
-
 }
 
 
