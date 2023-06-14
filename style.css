@@ -1,0 +1,217 @@
+body {
+  background-color: lightblue;
+  color:crimson;
+}
+
+h1 {
+  font-family: 'Gill Sans';
+  font-size: 80px;
+  text-align: center;
+}
+
+p {
+  font-family: Helvetica;
+  font-size: 30px;
+  padding: 10px;
+  margin: 20px;
+  text-align: center;
+}
+
+button {
+  font-size: 30px;
+  font-family: 'Gill Sans';
+  background-color:royalblue;
+  color:white;
+  font-stretch: expanded;
+}
+
+h2 {
+  font-size: 45px;
+  text-align: center;
+  color: rgb(48, 3, 3);
+}
+
+main {
+  min-height: 71vh;
+}
+
+.container {
+max-width: 800px;
+margin: auto;
+padding: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+
+.column {
+  flex: 1;
+  padding: 10px;
+}
+
+
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+  }
+}
+
+
+/*para estilizar la barra de navegación*/
+
+.container-nav {
+  display: flex;
+  padding: 10px;
+  height: 50px;
+  background-color: black;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+
+li>a {
+  padding: 8px 24px;
+}
+
+
+li {
+  list-style-type: none;
+}
+
+
+a {
+  color: white;
+  text-decoration:none;
+}
+
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+
+.button-menu-toggle {
+  display: none;
+}
+
+/*propiedades de video*/
+
+.video-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding: 50px;
+}
+
+/*propiedades de contenedor de imagnes*/
+
+.img-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 5px;
+  gap: 25px;
+  padding: 5px;
+}
+
+img.pequeña{
+  width: 50px;
+  height: 50px;
+}
+img.mediana{
+  width: 100px;
+  height: 100px;
+}
+img.grande{
+  width: 300px;
+  height: 300px;
+}
+
+footer {
+  position:relative;
+  bottom: 0;
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color:lightgreen;
+  min-height: 200px;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+
+/*para hacer que la barra de navegación sea adaptable, utilizando una media query*/
+
+@media (max-width: 768px) {
+  .column {
+    flex: 100%;
+  }
+
+
+  .nav-links {
+    display: none;
+  }
+
+
+  .button-menu-toggle {
+    display: block;
+    background-color:blue
+    border: none;
+    border-radius: 50px;
+    padding: 0 24px;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 20px;
+  }
+ 
+  .nav-links.nav-links-responsive {
+    position: absolute;
+    display: flex;
+    background-color: rgba(20,20,20,0.95);
+    width: 100%;
+    height: 100%;
+    top: 70px;
+    left: 0;
+    flex-direction: column;
+    padding-top: 200px;
+    align-items: center;
+    gap:70px;
+    font-size: 40px;
+
+
+  }
+
+  .video-container {
+    padding: 10px;
+    gap: 5px;
+  }
+  
+  .iframe {
+    max-width: 80%;
+  }
+
+}
+
+
+
+
+
